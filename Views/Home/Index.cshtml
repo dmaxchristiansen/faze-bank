@@ -1,0 +1,42 @@
+﻿@model User
+<div class="row">
+    <div class="col-7">
+        <form asp-action="Create" asp-controller="Home" method="post">
+            <div class="form-group">
+                <h5 class="mb-0"><label style="color: #e3f2fd;" asp-for="FirstName"></label></h5>
+                <span class="text-danger" asp-validation-for="FirstName"></span>
+                <input type="text" asp-for="FirstName" class="form-control">
+            </div>
+            <div class="form-group">
+                <h5 class="mb-0"><label style="color: #e3f2fd;" asp-for="LastName"></label></h5>
+                <span class="text-danger" asp-validation-for="LastName"></span>
+                <input type="text" asp-for="LastName" class="form-control">
+            </div>
+            <div class="form-group">
+                <h5 class="mb-0"><label style="color: #e3f2fd;" asp-for="Email"></label></h5>
+                <span class="text-danger" asp-validation-for="Email"></span>
+                <input type="text" asp-for="Email" class="form-control">
+            </div>
+            <div class="form-group">
+                <h5 class="mb-0"><label style="color: #e3f2fd;" asp-for="Password"></label></h5>
+                <span class="text-danger" asp-validation-for="Password"></span>
+                <input asp-for="Password" class="form-control">
+            </div>
+            <div class="form-group">
+                <h5 class="mb-0"><label style="color: #e3f2fd;" asp-for="Confirm"></label></h5>
+                <span class="text-danger" asp-validation-for="Confirm"></span>
+                <input asp-for="Confirm" class="form-control">
+            </div>
+            <div class="text-center">
+            <input type="submit" value="Register New Account" class="btn btn-primary btn-lg">
+            </div>
+        </form>
+    </div>
+    <div class="col-5 text-center">
+        <h1 class="display-1" style="color: #e3f2fd;">FazeBank</h1>
+        <img src="https://www.pinclipart.com/picdir/big/313-3132604_icons-save-money-clipart.png" width="300" alt="">
+        <h2 class="mt-4" style="color: #e3f2fd;">What will you own someday?</h2>
+        <h4 class="mt-5" style="color: #e3f2fd;">Already Registered?</h4>
+        <a href="/login" class="btn btn-primary btn-lg">Login Here</a>
+    </div>
+</div>
